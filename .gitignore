@@ -1,2 +1,10 @@
+## dotnet builds
 bin
 obj
+
+## npm
+node_modules
+
+## generated typescript
+app/**/*.js
+app/**/*.js.map
