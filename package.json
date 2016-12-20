@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"dotnet run\" ",
+    "start": "tsc && concurrently \"tsc -w\" \"dotnet watch run\" ",
     "install": "dotnet restore",
-    "clean:app": "npm run clean:bin && npm run clean:obj && npm run clean:npm",
+    "clean": "npm run clean:bin && npm run clean:obj && npm run clean:npm",
     "clean:bin": "del /q .\\bin\\*.* && for /d %i in (.\\bin\\*.*) do @rmdir /s /q \"%i\" ",
     "clean:obj": "del /q .\\obj\\*.* && for /d %i in (.\\obj\\*.*) do @rmdir /s /q \"%i\" ",
     "clean:npm": "del /q .\\node_modules\\*.* && for /d %i in (.\\node_modules\\*.*) do @rmdir /s /q \"%i\" ",
-    "browser:edge": "explorer http://localhost:5000",
-    "browser:chrome": "start chrome http://localhost:5000",
-    "browser:ff": "start firefox http://localhost:5000"
+    "edge": "start microsoft-edge:http://localhost:5000",
+    "chrome": "start chrome http://localhost:5000",
+    "firefox": "start firefox http://localhost:5000"
   },
   "keywords": [],
   "author": "",
