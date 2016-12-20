@@ -5,7 +5,8 @@
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"dotnet watch run\" ",
     "install": "dotnet restore",
-    "clean": "npm run clean:bin && npm run clean:obj && npm run clean:npm",
+    "clean": "npm run clean:dotnet && npm run clean:npm",
+    "clean:dotnet": "npm run clean:bin && npm run clean:obj",
     "clean:bin": "del /q .\\bin\\*.* && for /d %i in (.\\bin\\*.*) do @rmdir /s /q \"%i\" ",
     "clean:obj": "del /q .\\obj\\*.* && for /d %i in (.\\obj\\*.*) do @rmdir /s /q \"%i\" ",
     "clean:npm": "del /q .\\node_modules\\*.* && for /d %i in (.\\node_modules\\*.*) do @rmdir /s /q \"%i\" ",
