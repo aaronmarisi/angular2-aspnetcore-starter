@@ -4,14 +4,7 @@
 const { CheckerPlugin } = require('awesome-typescript-loader')
  
 module.exports = {
-    entry: {
-        "bundle": [
-            'core-js',
-            'reflect-metadata',
-            'zone.js',
-            './app/main.ts'
-        ]
-    },
+    entry: "./app.ts",
     
     output: {
         filename: "bundle.js"
