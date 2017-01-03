@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    moduleId: module.id,
     selector: 'my-pairing',    
     template: `
         <h2>Pairing</h2>
