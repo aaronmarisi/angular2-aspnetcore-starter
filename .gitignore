@@ -8,6 +8,8 @@ node_modules
 ## generated typescript
 app/**/*.js
 app/**/*.js.map
+bundle.js
+bundle.js.map
 
 ## logs
 **/*.log

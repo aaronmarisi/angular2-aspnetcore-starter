@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"dotnet watch run\" ",
+    "start": "dotnet watch run",
+    "webpack": "webpack",
     "install": "dotnet restore",
     "clean": "npm run clean:dotnet && npm run clean:npm",
     "clean:dotnet": "npm run clean:bin && npm run clean:obj",
@@ -26,7 +27,6 @@
     "@angular/platform-browser": "~2.2.0",
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
-
     "angular-in-memory-web-api": "~0.1.15",
     "systemjs": "0.19.40",
     "core-js": "^2.4.1",
@@ -35,9 +35,13 @@
     "zone.js": "^0.6.26"
   },
   "devDependencies": {
+    "@types/node": "^6.0.46",
+    "angular2-template-loader": "^0.6.0",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
     "concurrently": "^3.1.0",
+    "raw-loader": "^0.5.1",
     "typescript": "^2.0.10",
-    "@types/node": "^6.0.46"
+    "webpack": "^1.14.0"
   },
   "repository": {}
 }

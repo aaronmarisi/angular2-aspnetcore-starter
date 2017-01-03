@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 @Component({
-    moduleId: module.id,
     selector: 'my-about',    
     template: `
         <h2>About Sriracha</h2>
